@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{url_for('static', filename='css/all.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/aos.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+        <script src="{{url_for('static', filename='js/main.js')}}"></script>
+        <script src="{{url_for('static', filename='js/FileSaver.min.js')}}"></script>
+
+
+        <title>Background AI remover</title>
+         <meta charset="utf-8">
+        {% block head %}
+        {% endblock %}
+
+    </head>
+    <body>
+        {% block body %}
+
+        {% endblock %}
+        
+    </body>
+    
+      <script src="{{url_for('static', filename='js/main.js')}}"></script>
+    <script src="{{url_for('static', filename='js/aos.js')}}"></script>
+        <script>AOS.init() </script>
+</html>

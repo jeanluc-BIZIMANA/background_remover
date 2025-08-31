@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+
+{% block head %}
+
+ {% endblock %}
+
+
+  {% block body %}
+          <nav class="nav">
+         <div class="top-nav flex-row">
+                <div class="logo">
+                <a href="#" >📄  AI BG REMOVER</a>
+                </div>
+                <div class="detail">
+                <a href="#try">Try it</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">  About us</a>
+            </div>
+           
+         </div>
+        </nav>
+        <main>
+            <section class="resentation">
+                <div class="home">
+                    <div class="some-text" data-aos="fade-right" data-aos-delay="200">
+                        <h1> Your AI HD Background remover</h1>
+                        <p> AI Background remover is a tool  to help us to remove the background for free <br> you should use it for free share this news</p>
+                        <a  class="btn" href="#try"> Try it ⚡  </a>
+
+                    </div>
+
+                </div>
+            </section>
+        
+        <section>
+            <div class=" presentation" data-aos="zoom-in" data-aos-delay="200">
+                <div class="first">
+                    <img src="{{url_for('static', filename='assets/first.jpg')}}" alt="post1">
+                </div>
+                <div class="midle"data-aos="zoom-in" data-aos-delay="600">
+                    <img src="{{url_for('static', filename='assets/midle.png')}}" alt="post1">
+                </div>
+                <div class="second" data-aos="flip-up" data-aos-delay="500">
+                    <img src="{{url_for('static', filename='assets/second.jpg')}}" alt="post1">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="action">
+                <div id="try" class="main-form " data-aos="fade-right" data-aos-delay="200">
+                    <form name="files" enctype="multipart/form-data" method="POST">
+                        <label class="label">Upload Image</label>
+                        <input type="file" class="choisir" id="files" value="upload" name="file" required>
+                        <input type="submit" class="remove" value="Remove">
+                        <div class="bar">
+                            <div class="inside" id="inside"> 0%</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <div class="center-resultat">
+            <div >
+            <img id="myImage" class="image-global" width="300" />
+            </div>
+            <div class="downloadbtn">
+            <a id="download" href="static/assets/first.jpg"  download class="btn-global"> Download
+                 <i class="fa fa-download"></i>  </a>
+            </div>
+        </div>
+        
+        </main>
+                <footer class="footer">
+            <div class="container" id="about">
+
+                <div class="about-us">
+                    <h2 href="#">About us</h2>
+                    <p>I am a Lucas dev <br> I am   passionate about learning  new stuff <br>  hope you enjoy it ! </p>
+                </div>
+                <div class="newsletter">
+                    <h2> Newsletter</h2>
+                    <p> Stay update</p>
+                    <div class="form-element">
+                        <input  type="text" placeholder="enter your mail"> <span> <i class="fas fa-chevron-right" onclick="aletrting()"></i> </span>
+                    </div>
+                </div>
+                 <div class="instagram" id="contact">
+                    <h2>Contact</h2>
+                        <h4>Buy me coffee: <br>
+                            <a href="mailto">1bizimanajeanluc@gmail.com</a>
+                        </h4>
+                 </div>
+            </div>
+            <div class="right flex-row">
+                <h4 class="text-gray"> Copyright ©2019 All rights reserved </h4>
+            </div>
+        </footer>
+        
+        
+        
+{% endblock %}
+
+
+  
